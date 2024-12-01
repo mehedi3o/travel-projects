@@ -51,6 +51,24 @@ section{
 }
 
 
+.heading{
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background: rgba(255,165,0,.2);
+  color: var(--orange);
+  border-radius: .5rem;
+  padding: .2rem 1rem;
+}
+
+.heading span.space{
+  background: none;
+}
+
+
  /* btn section */
 
  .btn{
@@ -89,7 +107,8 @@ section{
     position: fixed;
     top: 0; left: 0;
     right: 0;
-    background: #1f1f1f;
+    /* background: #1f1f1f; */
+    background: var(--Marine);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -333,14 +352,187 @@ section{
  }
 
 
+ /* book start */
+
+ .book .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+ }
+
+ .book .row .image{
+     flex: 1 1 40rem;
+ }
+
+ .book .row .image img{
+   width: 100%;
+}
+
+.book .row form{
+  flex: 1 1 40rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: 0.5rem;
+}
 
 
+.book .row form .inputBox{
+  padding: .5rem 0;
+}
 
+.book .row form .inputBox input{
+  padding: 1rem;
+  width: 100%;
+  border: .1rem solid rgba(0,0,0,.1);
+  font-size: 1.7rem;
+  color: var(--Marine);
+  text-transform: none;
+}
 
+.book .row form .inputBox h3{
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--Marine);
+}
 
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
+.packages .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
 
+.packages .box-container .box img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
 
+.packages .box-container .box .content{
+  padding: 2rem;
+}
+
+.packages .box-container .box .content h3{
+  font-size: 2rem;
+  color: var(--Marine);
+}
+
+.packages .box-container .box .content h3 i{
+  
+  color: var(--orange);
+}
+
+.packages .box-container .box .content p{
+  font-size: 1.7rem;
+  color: var(--Marine);
+  padding: 1rem 0;
+}
+
+.packages .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--orange);
+}
+
+.packages .box-container .box .content .price{
+  font-size: 2rem;
+  color: var(--Marine);
+  padding-top: 1rem;
+}
+
+.packages .box-container .box .content .price span{
+  font-size: 1.5rem;
+  color: var(--Marine);
+  text-decoration: line-through;
+}
+
+.services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.services .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+}
+.services .box-container .box i{
+  padding: 1rem;
+  font-size: 5rem;
+  color: var(--orange);
+}
+
+.services .box-container .box h3{
+ 
+  font-size: 2.5rem;
+  color: var(--orange);
+}
+
+.services .box-container .box p{
+ 
+  font-size: 1.7rem;
+  color: var(--light-color);
+}
+
+.services .box-container .box:hover{
+  box-shadow: var(--box-shadow);
+}
+
+/* gallery */
+
+.gallery .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+}
+
+.gallery .box-container .box{
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border: 1rem solid var(--white);
+  border-radius: .5rem;
+  flex: 1 1 30rem;
+  height: 25rem; 
+  position: relative;
+}
+
+.gallery .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.gallery .box-container .box .content{
+  position: absolute;
+  top: -100%; left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,.7);
+  padding: 2rem;
+  padding-top: 5rem;
+}
+.gallery .box-container .box:hover .content{
+  top: 0;
+}
+
+.gallery .box-container .box .content h3{
+  font-size: 2.5rem;
+  color: var(--orange);
+} 
+
+.gallery .box-container .box .content p{
+  font-size: 1.3rem;
+  color: var(--white);
+  padding: .5rem 0;
+} 
 
 
 
@@ -382,6 +574,12 @@ section{
   header{
     padding: 2rem;
   }
+
+
+  section{
+    padding: 2rem;
+  }
+
  }
 
 
@@ -422,4 +620,9 @@ section{
   html{
     font-size: 50%;
   }
+
+  .heading span{
+    font-size: 2.5rem;
+  }
+
  }
