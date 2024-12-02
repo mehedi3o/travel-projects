@@ -57,3 +57,55 @@ videoBtn.forEach(btn =>{
 });
 
 
+// swper code
+
+
+// var swiper = new Swiper (".review-slider", {
+//   spaceBetween: 20,
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+//   breakpoints: {
+//     640: {
+//       sliderPerview: 1,
+
+//     },
+//     768: {
+//       sliderPerview: 2,
+//     },
+//     1024: {
+//       sliderPerview: 3,
+//     },
+//   },
+
+
+ 
+// });
+
+
+
+var swiper = new Swiper(".review-slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});
+
