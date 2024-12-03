@@ -66,7 +66,7 @@ section{
 .heading span{
   font-size: 3.5rem;
   background: rgba(255,165,0,.2);
-  color: var(--orange);
+  color: var(--black);
   border-radius: .5rem;
   padding: .2rem 1rem;
 }
@@ -115,7 +115,7 @@ section{
     top: 0; left: 0;
     right: 0;
     /* background: #1f1f1f; */
-    background: var(--Marine);
+    background: var(--white);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -126,27 +126,35 @@ section{
  header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
-    color: var(--white);
+    color: var(--black);
     text-transform: uppercase;
  }
 
+ header .logo img{
+  width: 30px;
+
+  
+ }
+ 
+
  header .logo span{
     color: var(--red);
+    text-transform: uppercase;
  }
 
  header .navbar a{
-    color: var(--white);
+    color: var(--black);
     font-size: 2rem;
     margin: 0 .8rem;
  }
 
  header .navbar a:hover{
-    color: var(--Sand);
+    color: var(--red);
  }
 
  header .icons i{
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
     margin-right: 2rem;
  }
